@@ -1,0 +1,39 @@
+.movies {
+  padding: 40px;
+}
+
+.movies__list {
+  margin: 30px;
+  display: flex;
+  gap: 25px;
+}
+
+.movie-card {
+  width: 153px;
+  height: 200px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.movie-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie-card__info {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 10px;
+}
+
+.movie-card__button {
+  margin-top: 10px;
+  display: inline-block;
+  color: red;
+  text-decoration: none;
+}
