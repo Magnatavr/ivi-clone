@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Оставить отзыв</title>
+  <link rel="stylesheet" href="../assets/css/index.css">
+  <script type="module" src="../assets/js/index.js" defer></script>
+</head>
+<body>
+  <header class="header">...</header>
+
+  <main class="review">
+    <section class="review__container">
+      <h1 class="review__title">Оставить отзыв</h1>
+
+      <form class="review__form">
+        <div class="review__group">
+          <label for="rating" class="review__label">Оценка:</label>
+          <select id="rating" name="rating" class="review__select">
+            <option value="5">5 - Отлично</option>
+            <option value="4">4 - Хорошо</option>
+            <option value="3">3 - Нормально</option>
+            <option value="2">2 - Плохо</option>
+            <option value="1">1 - Ужасно</option>
+          </select>
+        </div>
+
+        <div class="review__group">
+          <label for="comment" class="review__label">Комментарий:</label>
+          <textarea id="comment" name="comment" class="review__textarea" rows="6" placeholder="Напишите отзыв..."></textarea>
+        </div>
+
+        <div class="review__buttons">
+          <button type="submit" class="review__submit-btn">Отправить</button>
+          <button type="button" class="review__cancel-btn">Отмена</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

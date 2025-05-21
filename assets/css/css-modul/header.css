@@ -9,6 +9,11 @@
   align-items: center;
 }
 
+.header__nav {
+  display: flex;
+  gap: 20px;
+}
+
 .header__logo {
   font-size: 24px;
   font-weight: bold;
@@ -22,8 +27,14 @@
 }
 
 .header__link {
-  text-decoration: none;
   color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.header__link:hover {
+  opacity: 1;
 }
 
 .header__auth a {
