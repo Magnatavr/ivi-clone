@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter Page</title>
+    <link rel="stylesheet" href="../assets/css/index.css" />
+  </head>
+  <body>
+    <header class="header">...</header>
+
+    <main class="filter">
+      <section class="filter__controls">
+        <div class="filter__group">
+          <label class="filter__label">Жанр</label>
+          <select class="filter__select">
+            <option>Все</option>
+            <option>Комедия</option>
+            <option>Боевик</option>
+          </select>
+        </div>
+        <div class="filter__group">
+          <label class="filter__label">Год</label>
+          <select class="filter__select">
+            <option>Все</option>
+            <option>2024</option>
+            <option>2023</option>
+          </select>
+        </div>
+        <div class="filter__group">
+          <label class="filter__label">Страна</label>
+          <select class="filter__select">
+            <option>Все</option>
+            <option>США</option>
+            <option>Россия</option>
+          </select>
+        </div>
+      </section>
+
+      <h1 class="filter__title">Мультфильмы</h1>
+
+      <section class="filter__grid">
+        <article class="movie-card">
+          <img
+            src="../assets/img/board/shrek.webp"
+            alt="Example"
+            class="movie-card__image"
+          />
+          <div class="movie-card__info">
+            <h3 class="movie-card__title">Шрек</h3>
+            <a href="../pages/movie.html" class="movie-card__button">Смотреть</a>
+          </div>
+        </article>
+        <!-- другие карточки -->
+      </section>
+    </main>
+  </body>
+</html>

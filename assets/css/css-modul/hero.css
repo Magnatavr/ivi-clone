@@ -1,0 +1,38 @@
+.hero {
+  position: relative;
+}
+
+
+.hero__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.hero__slide{
+    position: relative;
+}
+.hero__content {
+  position: absolute;
+  bottom: 5%;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+  height: 70%;
+}
+
+.hero__title {
+  font-size: 36px;
+}
+
+.hero__button {
+  display: inline-block;
+  width: fit-content;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: red;
+  color: white;
+  text-decoration: none;
+}

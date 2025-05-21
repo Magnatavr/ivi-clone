@@ -1,0 +1,72 @@
+.header {
+  background-color: #141414;
+  padding: 20px 40px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header__logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+}
+
+.header__menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.header__link {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.header__link:hover {
+  opacity: 1;
+}
+
+.header__auth a {
+  margin-left: 15px;
+  color: #fff;
+  text-decoration: none;
+}
+.header_right-item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.nbl-button__primaryText {
+
+  text-align: center;
+  padding: 3px;
+  width: 100px;
+  cursor: pointer;
+  background: transparent;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition-property: color;
+  transition-duration: 0.4s;
+  color: hsla(0, 0%, 100%, 0.48);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.nbl-button__iconWrapper {
+  width: 100%;
+}
