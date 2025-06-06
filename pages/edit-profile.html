@@ -1,37 +1,57 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <title>Редактирование профиля</title>
-  <link rel="stylesheet" href="../assets/css/index.css" />
-  <script type="module" src="../assets/js/index.js" defer></script>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Редактирование профиля</title>
+    <link rel="stylesheet" href="../assets/css/index.css" />
+    <script type="module" src="../assets/js/index.js" defer></script>
+  </head>
+  <body>
+    <main class="edit-profile">
+      <h1 class="edit-profile__title">Редактировать профиль</h1>
 
-</head>
-<body>
-  <main class="edit-profile">
-    <h1 class="edit-profile__title">Редактировать профиль</h1>
+      <form class="edit-profile__form">
+        <div class="edit-profile__field">
+          <label for="name" class="edit-profile__label">Имя:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="edit-profile__input"
+            placeholder="Введите имя"
+          />
+        </div>
 
-    <form class="edit-profile__form">
-      <div class="edit-profile__field">
-        <label for="name" class="edit-profile__label">Имя:</label>
-        <input type="text" id="name" name="name" class="edit-profile__input" placeholder="Введите имя" />
-      </div>
+        <div class="edit-profile__field">
+          <label for="email" class="edit-profile__label">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="edit-profile__input"
+            placeholder="Введите email"
+          />
+        </div>
 
-      <div class="edit-profile__field">
-        <label for="email" class="edit-profile__label">Email:</label>
-        <input type="email" id="email" name="email" class="edit-profile__input" placeholder="Введите email" />
-      </div>
+        <div class="edit-profile__field">
+          <label for="avatar" class="edit-profile__label">Аватар:</label>
+          <input
+            type="file"
+            id="avatar"
+            name="avatar"
+            class="edit-profile__input edit-profile__input--file"
+          />
+        </div>
 
-      <div class="edit-profile__field">
-        <label for="avatar" class="edit-profile__label">Аватар:</label>
-        <input type="file" id="avatar" name="avatar" class="edit-profile__input edit-profile__input--file" />
-      </div>
-
-      <div class="edit-profile__buttons">
-        <button type="submit" class="edit-profile__save-button">Сохранить</button>
-        <button type="button" class="edit-profile__cancel-button">Отмена</button>
-      </div>
-    </form>
-  </main>
-</body>
+        <div class="edit-profile__buttons">
+          <button type="submit" class="edit-profile__save-button">
+            Сохранить
+          </button>
+          <button type="button" class="edit-profile__cancel-button">
+            Отмена
+          </button>
+        </div>
+      </form>
+    </main>
+  </body>
 </html>

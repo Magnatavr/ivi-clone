@@ -2,14 +2,13 @@
   position: relative;
 }
 
-
 .hero__image {
   width: 100%;
   height: auto;
   display: block;
 }
-.hero__slide{
-    position: relative;
+.hero__slide {
+  position: relative;
 }
 .hero__content {
   position: absolute;

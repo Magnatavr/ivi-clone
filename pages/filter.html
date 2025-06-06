@@ -1,58 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Filter Page</title>
+    <title>Фильтры</title>
     <link rel="stylesheet" href="../assets/css/index.css" />
+    <script type="module" src="../assets/js/index.js" defer></script>
   </head>
   <body>
-    <header class="header">...</header>
-
-    <main class="filter">
-      <section class="filter__controls">
-        <div class="filter__group">
-          <label class="filter__label">Жанр</label>
-          <select class="filter__select">
-            <option>Все</option>
-            <option>Комедия</option>
-            <option>Боевик</option>
-          </select>
-        </div>
-        <div class="filter__group">
-          <label class="filter__label">Год</label>
-          <select class="filter__select">
-            <option>Все</option>
-            <option>2024</option>
-            <option>2023</option>
-          </select>
-        </div>
-        <div class="filter__group">
-          <label class="filter__label">Страна</label>
-          <select class="filter__select">
-            <option>Все</option>
-            <option>США</option>
-            <option>Россия</option>
-          </select>
-        </div>
-      </section>
-
-      <h1 class="filter__title">Мультфильмы</h1>
-
-      <section class="filter__grid">
-        <article class="movie-card">
-          <img
-            src="../assets/img/board/shrek.webp"
-            alt="Example"
-            class="movie-card__image"
-          />
-          <div class="movie-card__info">
-            <h3 class="movie-card__title">Шрек</h3>
-            <a href="../pages/movie.html" class="movie-card__button">Смотреть</a>
+    <!-- Хедер -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">IVICLONE</div>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a href="../index.html" class="header__link">главная</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__link">Фильмы</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__link">Мультфильмы</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__link">Новинки</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header_right-item">
+         
+          <div class="header__auth">
+            <a href="./auth.html" class="header__login-btn header__link"
+              >Войти</a
+            >
+            <a href="./auth.html" class="header__register-btn header__link"
+              >Регистрация</a
+            >
+            <a href="./profile.html" class="header__register-btn header__link"
+              >Профиль</a
+            >
           </div>
-        </article>
-        <!-- другие карточки -->
+        </div>
+      </div>
+    </header>
+
+    <!-- Форма фильтров -->
+    <main class="filter">
+      <div
+        class="filter__container container"
+        style="text-align: center; padding: 40px 0"
+      >
+        <h1 class="filter__title">Найди фильм по своему вкусу</h1>
+        <form class="filter__form" id="filterForm">
+          <select class="filter__select" name="genre" required>
+            <option value="">Выбери жанр</option>
+            <option value="action">Боевик</option>
+            <option value="comedy">Комедия</option>
+            <option value="drama">Драма</option>
+          </select>
+          <select class="filter__select" name="year" required>
+            <option value="">Год выпуска</option>
+            <option value="2025">2025</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+          </select>
+          <button type="submit" class="filter__button">Поиск</button>
+        </form>
+      </div>
+
+      <!-- Секция результатов -->
+      <section class="movies">
+        <div class="movies__container">
+          <h2 class="movies__title">Результаты поиска</h2>
+          <div class="movies__list" id="resultsContainer">
+            <!-- Пример карточки фильма -->
+            <div class="movie-card">
+              <img
+                src="../assets/img/board/starwars.jpg"
+                alt="Фильм"
+                class="movie-card__image"
+              />
+              <div class="movie-card__info">
+                <h3 class="movie-card__title">Пример фильма</h3>
+                <a href="./movie.html" class="movie-card__button">Смотреть</a>
+              </div>
+            </div>
+            <!-- Карточки фильмов будут добавляться сюда -->
+          </div>
+        </div>
       </section>
     </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="footer__container">
+        <p class="footer__text">© 2025 IVI Clone. Все права защищены.</p>
+      </div>
+    </footer>
   </body>
 </html>
