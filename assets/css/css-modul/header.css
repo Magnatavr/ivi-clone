@@ -12,12 +12,14 @@
 .header__nav {
   display: flex;
   gap: 20px;
+  
 }
 
 .header__logo {
   font-size: 24px;
   font-weight: bold;
   color: red;
+  text-decoration: none;
 }
 
 .header__menu {
