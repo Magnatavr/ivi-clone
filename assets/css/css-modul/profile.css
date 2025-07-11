@@ -48,6 +48,12 @@
   font-weight: 600;
   margin-left: 10px;
 }
+.profile_btns {
+  display: flex;
+  gap: 12px;
+  flex-wrap: nowrap;
+  max-width: 100%;
+}
 
 .profile__edit-button {
   text-decoration: none;
@@ -63,4 +69,25 @@
 
 .profile__edit-button:hover {
   background-color: #c40812;
+}
+.profile__exit-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #908888; /* красный цвет для выхода */
+  color: rgb(11, 10, 10);
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.profile__exit-button:hover {
+  background-color: #e50914;
+
+}
+
+.profile__exit-button:active {
+  background-color: #a93226; 
 }

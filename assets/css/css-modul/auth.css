@@ -68,3 +68,10 @@
 .hidden {
   display: none;
 }
+.error-messages {
+  text-align: center;
+  color: red;
+}
+.error-messages li{
+ list-style-type: none;
+}

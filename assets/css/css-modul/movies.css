@@ -2,13 +2,28 @@
   padding: 40px;
 }
 
+.movie_video {
+  width: 100%;
+  border-radius: 12px;
+}
+
 .movies__list {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 24px 12px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 300px;
+  transition: opacity 0.3s ease;
+}
+.movie__card-container {
+  display: flex;
   gap: 24px;
+  max-width: 100%;
+  transition: opacity 0.3s ease;
+  justify-content: center;
+
 }
 
 .movie-card {
@@ -119,7 +134,8 @@
 
 .movie__player-placeholder {
   background-color: #222;
-  height: 400px;
+  min-height: 400px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,4 +163,17 @@
 
 .movie__review-btn:hover {
   background-color: #444;
+}
+
+
+.type_container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.movies__type-block{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
