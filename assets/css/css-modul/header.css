@@ -12,12 +12,14 @@
 .header__nav {
   display: flex;
   gap: 20px;
+  
 }
 
 .header__logo {
   font-size: 24px;
   font-weight: bold;
   color: red;
+  text-decoration: none;
 }
 
 .header__menu {
@@ -27,6 +29,8 @@
 }
 
 .header__link {
+  font-size: 15px;
+
   color: #fff;
   text-decoration: none;
   opacity: 0.8;
@@ -42,14 +46,12 @@
   color: #fff;
   text-decoration: none;
 }
-.header_right-item{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-
+.header_right-item {
+  display: flex;
+  align-items: center;
+  
 }
 .nbl-button__primaryText {
-
   text-align: center;
   padding: 3px;
   width: 100px;
